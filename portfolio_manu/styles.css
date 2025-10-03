@@ -413,3 +413,18 @@ background: rgba(167, 188, 202, 0.6);  color: #08171E;
     gap: 30px;
   }
 }
+/* Stack hero buttons on mobile */
+@media (max-width: 480px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* spacing between buttons */
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 80%; /* optional: make buttons wider on small screens */
+    text-align: center;
+    margin-right: 0; /* remove extra margin */
+  }
+}
